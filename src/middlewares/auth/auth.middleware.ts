@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from "express";
-import { AuthService } from "../../services";
 import { JWT } from "../../utils/jwt";
 
 // (Bearer) => Portador;

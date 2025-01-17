@@ -1,4 +1,4 @@
-import { randomUUID } from "crypto";
+
 import { prisma } from "../database/prisma.database";
 import { LoginDto } from "../dtos";
 import { ResponseApi } from "../types";
@@ -47,8 +47,6 @@ export class AuthService {
     };
 
     const token = jwt.genereteToken(payload);
-
-
 
     // 4 - Feed de sucesso retornando o token (uid)
     return {
